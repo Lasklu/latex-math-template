@@ -1,0 +1,69 @@
+%%% DOCUMENT TYPE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{article}
+
+%%% PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Encoding
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Geometry
+
+\usepackage{geometry} % edit margins of paper
+\usepackage{setspace} % edit line spacing
+\usepackage{fancyhdr} % header, footer
+\usepackage{titlesec} % edit format of titles
+
+% Visual
+
+\usepackage[dvipsnames]{xcolor} % colors
+\usepackage{tikz} % graphics
+\usepackage[framemethod=tikz]{mdframed} % frames, better theorems
+
+% Math
+
+\usepackage{amsmath} % math tools
+\usepackage{amssymb} % math symbols
+\usepackage{amsthm} % thereoms
+\usepackage{mathtools} % math tools
+
+% Referencing
+
+\usepackage{nameref}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% Useful
+
+\usepackage[shortlabels]{enumitem} % enumerations
+
+% Other
+
+\usepackage{lastpage} % get number of last page
+\usepackage{letltxmacro}
+
+%%% MARGINS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry{a4paper, left=30mm, right=30mm, top=30mm, bottom=30mm, includehead}
+
+%%% COLORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{latex-math-template/setup/colors.tex}
+
+%%% CAPTIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{latex-math-template/setup/captions.tex}
+
+%%% SHORTCUTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{latex-math-template/setup/shortcuts.tex}
+
+%%% FORMATTING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{latex-math-template/setup/formatting.tex}
+
+%%% LANGUAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\doclang}[1]{\input{latex-math-template/setup/languages/#1.tex}}
